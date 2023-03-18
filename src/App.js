@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/main.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import qrCodeImage from "./images/image-qr-code.png";
+
+const App = () => {
+    return (
+        <main>
+            <div className="card">
+                <img src={qrCodeImage} alt="qr-code" />
+                <h2>Improve your front-end skills by building projects</h2>
+                <p>
+                    Scan the QR code to visit Frontend Mentor and take your
+                    coding skills to the next level
+                </p>
+            </div>
+        </main>
+    );
+};
 
 export default App;
